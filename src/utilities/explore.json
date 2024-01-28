@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Outdoor living",
+        "image": "https://picsum.photos/600/400.jpg"
+    },
+    {
+        "name": "Japanese housing",
+        "image": "https://picsum.photos/600/400.jpg"
+    },
+    {
+        "name": "Scandinavian minimalism",
+        "image": "https://picsum.photos/600/400.jpg"
+    },
+    {
+        "name": "Industrial loft",
+        "image": "https://picsum.photos/600/400.jpg"
+    },
+    {
+        "name": "French country",
+        "image": "https://picsum.photos/600/400.jpg"
+    },
+    {
+        "name": "Coastal beach house",
+        "image": "https://picsum.photos/600/400.jpg"
+    },
+    {
+        "name": "Mediterranean villa",
+        "image": "https://picsum.photos/600/400.jpg"
+    }  
+]

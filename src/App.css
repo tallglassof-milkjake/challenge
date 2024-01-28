@@ -1,0 +1,156 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+@layer components {
+    .page-wrapper {
+        @apply p-4 max-w-[576px] mx-auto
+    }
+
+    .gradient-wrapper {
+        @apply p-4 mx-auto flex
+    }
+
+    .gardient-inner {
+        @apply max-w-[576px] mx-auto
+    }
+
+    .navbar-mobile {
+        @apply max-w-[576px] flex mx-auto
+    }
+
+    .nav {
+        @apply mx-auto min-w-[375px]
+    }
+
+    .masonry-grid {
+        @apply h-[508px] overflow-hidden relative
+    }
+
+    .button {
+        @apply w-full py-[13px]
+    }
+
+    .input {
+        @apply focus:outline-none focus:ring-[0.8px] focus:ring-[#917AFD] focus:bg-[#F1F1FE] focus:border-transparent
+    }
+}
+
+.wrapper {
+    margin-top: 2.75rem;
+    margin-bottom: 2rem;
+    max-height: calc(100vh - (2.75rem + 2rem));
+    background: #FCFCFC;
+}
+
+.gradient-wrapper {
+    margin-top: 2.75rem;
+    margin-bottom: calc(2rem + 5.125rem);
+    max-height: calc(100vh - (2.75rem + 2rem + 5.125rem));
+    background: linear-gradient(180deg, #FCFCFC 25%, rgba(125, 127, 136, 0.4) 100%);
+    overflow-y: scroll;
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(180deg, rgba(251, 251, 251, 0.00) 53.59%, #FCFCFC 87.94%);
+}
+
+.masonry-card {
+    margin-bottom: 0.563rem;
+}
+
+.landing-content {
+
+}
+
+.heading-3 {
+    color: #1A1E25;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heading-4 {
+    color: #1A1E25;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.primary-link {
+    background: linear-gradient(136deg, #917AFD 2.61%, #6246EA 96.58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-content {
+    color: #7D7F88;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button-primary {
+    background: linear-gradient(136deg, #917AFD 2.61%, #6246EA 96.58%);
+    border-radius: 9999px;
+    color: #FFF;
+    box-shadow: 0px 46px 400px -88px rgba(98,70,234,0.75);
+    -webkit-box-shadow: 0px 46px 400px -88px rgba(98,70,234,0.75);
+    -moz-box-shadow: 0px 46px 400px -88px rgba(98,70,234,0.75);
+}
+
+.button-primary:hover {
+    background: linear-gradient(136deg, #6246EA 2.61%, #917AFD 96.58%);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.button-secondary {
+    border-radius: 54px;
+    border: 0.8px solid #E3E3E7;
+    background:#FFF;
+    color: #475569;
+}
+
+.button-apple {
+    background: #222831;
+    color: #ffffff;
+    border-radius: 9999px;
+    position: relative;
+}
+
+.button-google {
+    border-radius: 54px;
+    border: 0.8px solid #E3E3E7;
+    background:#FFF;
+    color: #475569;
+    position: relative;
+}
+
+.input {
+    background: #F2F2F3;
+    border-radius: 81px;
+    border: 0.8px solid #E3E3E7;
+    padding: 12px 18px 12px 52px;
+    width: 100%;
+}
+
+.sm-clickable-link {
+    color: #7D7F88;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}

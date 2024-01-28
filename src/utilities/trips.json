@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Bali, Indonesia",
+        "image": "https://i.ibb.co/hcwLryT/bali-indonesia.jpg",
+        "rented_props_count": 100
+    },
+    {
+        "name": "Toyko, Japan",
+        "image": "https://i.ibb.co/vZt1WZS/tokyo-city.jpg",
+        "rented_props_count": 234363
+    },
+    {
+        "name": "Sydney, Australia",
+        "image": "https://i.ibb.co/mhKDThR/sydney-city.jpg",
+        "rented_props_count": 9124
+    },
+    {
+        "name": "New York, United States",
+        "image": "https://i.ibb.co/phPV00W/new-york-city.jpg",
+        "rented_props_count": 2541098
+    }
+]
