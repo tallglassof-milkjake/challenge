@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import tripsArray from '../utilities/trips.json';
 import exploreArray from '../utilities/explore.json';

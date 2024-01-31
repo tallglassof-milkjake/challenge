@@ -1,3 +1,5 @@
+import React from 'react';
+
 import HomeIcon from '../assets/svg/home.svg';
 import ExploreIcon from '../assets/svg/explore.svg';
 import ChatIcon from '../assets/svg/chat.svg';

@@ -1,3 +1,5 @@
+import React from "react";
+
 interface Props {
     headingSize: string;
     text: string;
