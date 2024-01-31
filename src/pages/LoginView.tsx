@@ -19,7 +19,9 @@ interface Props {
 
 const loginUser = async (credentials: object) => {
     try {
-        return { 'userToken': 'test123' };
+        if (credentials) {
+            return { 'userToken': 'test123' };
+        }
         // const data = await fetch('http://localhost:8080/token', {
         //     method: 'POST',
         //     headers: {
@@ -35,8 +37,8 @@ const loginUser = async (credentials: object) => {
 }
 
 const LoginView = ({ setToken }: Props) => {
-    const [userName, setUserName] = useState();
-    const [password, setPassword] = useState();
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
     const handleSubmit = async (event: React.SyntheticEvent) => {
@@ -54,12 +56,14 @@ const LoginView = ({ setToken }: Props) => {
     }
 
     const handleUserNameChange = (event: React.SyntheticEvent) => {
-        let userName = event.target.value;
+        const target = event.target as HTMLInputElement;
+        let userName: string = target.value.toString();
         setUserName(userName);
     }
 
     const handlePasswordChange = (event: React.SyntheticEvent) => {
-        let password = event.target.value;
+        const target = event.target as HTMLInputElement;
+        let password: string = target.value;
         setPassword(password);
     }    
 

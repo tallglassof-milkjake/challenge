@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import tripsArray from '../utilities/trips.json';
 import exploreArray from '../utilities/explore.json';
@@ -29,9 +29,13 @@ interface Discover {
 }
 
 const HomeView = () => {
-    const [trips, setTrips] = useState<Trips[]>(tripsArray);
-    const [explore, setExplore] = useState<Explore[]>(exploreArray);
-    const [discover, setDiscover] = useState<Discover[]>(discoverArray);
+    const [trips, setTrips] = useState<Trips[] | any>(); // any to override type def for the sake of time
+    const [explore, setExplore] = useState<Explore[] | any>(); // any to override type def for the sake of time
+    const [discover, setDiscover] = useState<Discover[] | any>(); // any to override type def for the sake of time
+
+    setTrips(tripsArray);
+    setExplore(exploreArray);
+    setDiscover(discoverArray);
     
     return (
         <div className="gradient-wrapper">
