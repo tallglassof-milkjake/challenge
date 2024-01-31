@@ -29,7 +29,7 @@ function App() {
                         
                         {/* Redirect to home page if not logged in */}
                         {!token && <Route path="*" element={<Navigate to="/landing" />} />}
-                        {token && <Route path="/" element={<HomeView />} />}
+                        {token && <Route path="/challenge" element={<HomeView />} />}
                         
                         {/* Login route accessible only when not logged in */}
                         {!token && <Route path="/login" element={<LoginView setToken={setToken} />} />}

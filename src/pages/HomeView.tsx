@@ -29,14 +29,25 @@ interface Discover {
 }
 
 const HomeView = () => {
-    const [trips, setTrips] = useState<Trips[] | any>(); // any to override type def for the sake of time
-    const [explore, setExplore] = useState<Explore[] | any>(); // any to override type def for the sake of time
-    const [discover, setDiscover] = useState<Discover[] | any>(); // any to override type def for the sake of time
+    /**
+     * The following has been removed to prevent a re render issue
+     */
+    // const [trips, setTrips] = useState<Trips[] | any>(); // any to override type def for the sake of time
+    // const [explore, setExplore] = useState<Explore[] | any>(); // any to override type def for the sake of time
+    // const [discover, setDiscover] = useState<Discover[] | any>(); // any to override type def for the sake of time
 
-    setTrips(tripsArray);
-    setExplore(exploreArray);
-    setDiscover(discoverArray);
+    // const initialise = () => {
+    //     setTrips(tripsArray);
+    //     setExplore(exploreArray);
+    //     setDiscover(discoverArray);
+    // }
     
+    // initialise();
+
+    const trips: Trips[] = tripsArray;
+    const explore: Explore[] = exploreArray;
+    const discover: Discover[] = discoverArray;
+
     return (
         <div className="gradient-wrapper">
             <div className="gardient-inner h-fit flex flex-col pt-[16px] pb-[31px] gap-[36px]">
