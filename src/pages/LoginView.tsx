@@ -42,7 +42,6 @@ const LoginView = ({ setToken }: Props) => {
     const navigate = useNavigate();
 
     const handleSubmit = async (event: React.SyntheticEvent) => {
-        console.log(event);
         event.preventDefault();
         const token = await loginUser({
             userName,

@@ -26,7 +26,7 @@ html {
     }
 
     .nav {
-        @apply mx-auto min-w-[375px]
+        @apply mx-auto min-w-[320px]
     }
 
     .masonry-grid {

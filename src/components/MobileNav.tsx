@@ -10,7 +10,7 @@ const MobileNav = () => {
         <div className="flex justify-center">
             <div className="navbar-mobile fixed bottom-8 h-fit bg-white w-full py-[18px] px-[23px]">
                 <nav className="nav">
-                    <ul className="flex flex-row justify-between">
+                    <ul className="flex flex-row justify-around">
                         <li className="flex flex-col gap-[4px] place-items-center">
                             <img src={HomeIcon} alt="" />
                             <p className="text-[12px] text-[#7D7F88] font-normal">

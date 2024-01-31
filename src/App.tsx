@@ -21,15 +21,15 @@ function App() {
             <div
                 className="h-fit"
             >
-                <BrowserRouter>
+                <BrowserRouter basename="challenge">
                     <Routes>
                         {/* Public routes accessible without a token */}
                         <Route path="/landing" element={<LandingView />} />
                         {!token && <Route path="/signup" element={<SignupView />} />}
                         
                         {/* Redirect to home page if not logged in */}
-                        {!token && <Route path="*" element={<Navigate to="/landing" />} />}
-                        {token && <Route path="/challenge" element={<HomeView />} />}
+                        {!token && <Route path="/*" element={<Navigate to="/landing" />} />}
+                        {token && <Route path="/" element={<HomeView />} />}
                         
                         {/* Login route accessible only when not logged in */}
                         {!token && <Route path="/login" element={<LoginView setToken={setToken} />} />}
