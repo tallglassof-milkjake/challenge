@@ -1,5 +1,3 @@
-import React from "react"
-
 const SignupView = () => {
     return (
         <div>SignupView</div>
